@@ -21,8 +21,8 @@ function App() {
       if (isItemInCart) {
         return prev.map(item => (
           item.id === productClicked.id
-            ? {...item, amount: item.amount + 1}:
-            item
+            ? {...item, amount: item.amount + 1}
+            : item
         ));
       }
       // Primeira vez o produto é acrescentado
@@ -30,12 +30,25 @@ function App() {
     });
   };
 
-  console.log(data)
+  const handleRemoveFromCart = (id) => {
+    setCartItems(prev => (
+      prev.reduce((ack, item) => {
+        if (item.id === id) {
+          if (item.amount === 1) return ack;
+          return [...ack, { ...item, amount: item.amount - 1 }];
+        } else {
+          return [...ack, item];
+        }
+      }, []))
+    );
+  };
+  
+
   const divEmpty = (<div>Loja sem produtos para vender</div>);
   return (
     <div className="App">
       <ButtonCart handleCartOpen={handleCartOpen} />
-      {cartOpen && <Cart cartItems={cartItems} />}
+      {cartOpen && <Cart cartItems={cartItems} handleAddToCart={handleAddToCart} handleRemoveFromCart={handleRemoveFromCart} />}
       <Container>
         {!data.length && <divEmpty />}
         {data.map(product => (
