@@ -1,7 +1,7 @@
 import './ProductItem.css';
 
-function ProductItem ({ item }) {
-    const {image, name, price, score} = item;
+function ProductItem ({ product, handleAddToCart }) {
+    const {image, name, price, score} = product;
     const srcImage = process.env.PUBLIC_URL + '../assets/' + image;
     return (
         <div className='ProductItem'>
@@ -11,7 +11,9 @@ function ProductItem ({ item }) {
                 <p>{'R$ ' + price.toFixed(2).replace('.', ',')}</p>
                 <p>Score: {score}</p>
             </div>
-            <button>Acrescentar</button>
+            <button onClick={() => {handleAddToCart(product)}}>
+                Acrescentar
+            </button>
         </div>
     );
 }
