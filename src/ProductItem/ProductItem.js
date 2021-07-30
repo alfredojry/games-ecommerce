@@ -2,7 +2,7 @@ import './ProductItem.css';
 
 function ProductItem ({ product, handleAddToCart }) {
     const {image, name, price, score} = product;
-    const srcImage = process.env.PUBLIC_URL + '../assets/' + image;
+    const srcImage = process.env.PUBLIC_URL + '/assets/' + image;
     return (
         <div className='ProductItem'>
             <img src={srcImage} alt={name} />

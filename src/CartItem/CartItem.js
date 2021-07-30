@@ -2,7 +2,7 @@ import './CartItem.css';
 
 function CartItem ({ item, handleAddToCart, handleRemoveFromCart }) {
     const {id, image, name, price, amount} = item;
-    const srcImage = process.env.PUBLIC_URL + '../assets/' + image;
+    const srcImage = process.env.PUBLIC_URL + '/assets/' + image;
     return (
         <div className='CartItem'>
             <h3>{name}</h3>
