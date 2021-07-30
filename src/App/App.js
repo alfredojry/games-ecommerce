@@ -47,6 +47,7 @@ function App() {
   const divEmpty = (<div>Loja sem produtos para vender</div>);
   return (
     <div className="App">
+      <h1>Sua loja online...</h1>
       <ButtonCart handleCartOpen={handleCartOpen} />
       {cartOpen && <Cart cartItems={cartItems} handleAddToCart={handleAddToCart} handleRemoveFromCart={handleRemoveFromCart} />}
       <Container>
