@@ -3,4 +3,11 @@
     z-index: 100;
     right: 20px;
     top: 20px;
+    cursor: pointer;
+    border: 1px solid teal;
+    border-radius: 5px;
+}
+
+.ButtonCart:hover {
+    transform: scale(1.2);
 }

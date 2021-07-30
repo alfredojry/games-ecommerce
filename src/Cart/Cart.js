@@ -1,22 +1,12 @@
-//import { useState, useEffect } from 'react';
 import CartItem from '../CartItem/CartItem';
+import './Cart.css';
 
 function Cart ({ cartItems, handleAddToCart, handleRemoveFromCart }) {
-    /*const [subTotal, setSubTotal] = useState(0);
-    const [frete, setFrete] = useState(0);
-    const [total, setTotal] = useState(0);
-    const handleSum = () => {
-        setSubTotal(cartItems.reduce((acc, curr) => acc + curr.amount * curr.price, 0));
-        setFrete(subTotal < 250 ? 10 * cartItems.reduce((acc, curr) => acc + curr.amount, 0) : 0);
-        setTotal(subTotal + frete);
-    };
-    useEffect(handleSum, [cartItems, frete, subTotal])*/
     const subTotal = (cartItems) => cartItems.reduce((acc, curr) => acc + curr.amount * curr.price, 0);
     const frete = (cartItems) => subTotal < 250 ? 10 * cartItems.reduce((acc, curr) => acc + curr.amount, 0) : 0;
-    //const total = subTotal + frete;
     return (
-        <div>
-            Seu carrinho
+        <div className='Cart'>
+            <h2>Seu carrinho</h2>
             {!cartItems.length ? <p>Carrinho vazio.</p>: null}
             {cartItems.map(item => (<CartItem 
                 key={item.id} 

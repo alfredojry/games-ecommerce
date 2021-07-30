@@ -1,6 +1,8 @@
+import './Container.css';
+
 function Container (props) {
     return (
-        <div>
+        <div className='Container'>
             {props.children}
         </div>
     );

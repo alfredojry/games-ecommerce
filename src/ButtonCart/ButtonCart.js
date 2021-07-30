@@ -1,3 +1,5 @@
+import './ButtonCart.css';
+
 function ButtonCart ({ handleCartOpen }) {
     const srcSvg = process.env.PUBLIC_URL + '../assets/cart-icon.svg';
     return (
