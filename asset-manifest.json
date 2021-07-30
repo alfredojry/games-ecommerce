@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/games-ecommerce/static/css/main.f75b9b0c.chunk.css",
+    "main.js": "/games-ecommerce/static/js/main.dc78dd28.chunk.js",
+    "main.js.map": "/games-ecommerce/static/js/main.dc78dd28.chunk.js.map",
+    "runtime-main.js": "/games-ecommerce/static/js/runtime-main.d4ae50e7.js",
+    "runtime-main.js.map": "/games-ecommerce/static/js/runtime-main.d4ae50e7.js.map",
+    "static/js/2.3e8799bd.chunk.js": "/games-ecommerce/static/js/2.3e8799bd.chunk.js",
+    "static/js/2.3e8799bd.chunk.js.map": "/games-ecommerce/static/js/2.3e8799bd.chunk.js.map",
+    "static/js/3.00d0d2b4.chunk.js": "/games-ecommerce/static/js/3.00d0d2b4.chunk.js",
+    "static/js/3.00d0d2b4.chunk.js.map": "/games-ecommerce/static/js/3.00d0d2b4.chunk.js.map",
+    "index.html": "/games-ecommerce/index.html",
+    "static/css/main.f75b9b0c.chunk.css.map": "/games-ecommerce/static/css/main.f75b9b0c.chunk.css.map",
+    "static/js/2.3e8799bd.chunk.js.LICENSE.txt": "/games-ecommerce/static/js/2.3e8799bd.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d4ae50e7.js",
+    "static/js/2.3e8799bd.chunk.js",
+    "static/css/main.f75b9b0c.chunk.css",
+    "static/js/main.dc78dd28.chunk.js"
+  ]
+}
